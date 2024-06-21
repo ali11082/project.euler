@@ -5,9 +5,13 @@ def prime (n):
         if n%i==0:
             aval=False
     return aval
-def m_p (n):
-    for i in range (int(n/2)+1,1,-1):
-        if (n%i==0) and (prime(i)==True):
-            return i
+l1=[]
+def m_p (n): 
+    for i in range (2,int(n/2)+1):
+        if prime(i)==True and n%i==0:
+          #  print(i)
+            l1.append(i)
+            print(l1[-1])                 
+ #   return l1[-1]
 v= int(input("please enter the number:   "))
 print (m_p(v))
