@@ -20,7 +20,7 @@ for i in g2:
     print(i,end=" ")
 for i in g3:
     print(i,end=" ")
-#print(g,g2,g3)
+
 
 
 
